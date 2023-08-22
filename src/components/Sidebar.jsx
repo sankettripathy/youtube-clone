@@ -3,8 +3,9 @@ import { Stack } from "@mui/material";
 
 import { categories } from "../utils/constants";
 
-const Categories = ({ selectedCategory, setSelectedCategory }) => (
-  <Stack
+const Categories = ({ selectedCategory, setSelectedCategory }) => {
+  return (
+    <Stack
     direction="row"
     sx={{
       overflowY: "auto",
@@ -31,6 +32,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
       </button>
     ))}
   </Stack>
-);
+  )
+}
 
 export default Categories;
